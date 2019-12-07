@@ -50,15 +50,15 @@ hr {
   color: #414141;
 }
 
-div.parent {
+.content {
   position: relative;
-  height: 100vh;
+  min-height: calc(100vh - 70px);
 }
 
-div.wrapper {
+.content-inside {
   position: absolute;
   margin: 0 auto;
-  width: 94%;
+  width: 90%;
   height: 94%;
   top: 50%;
   left: 50%;
@@ -168,6 +168,7 @@ footer {
   font-size: 0.9em;
   text-align: center;
   color: #414141;
+  height: 50px;
 }
 
 article.portfolio-item {
@@ -190,7 +191,7 @@ div.portfolio-description {
 }
 
 @media (max-width: 768px) {
-  div.wrapper{
+  .content-inside{
     width: 96%;
     grid-template-columns: 1fr;
   }
